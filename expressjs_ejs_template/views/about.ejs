@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <table border="1" width="500px">
+      <% items.forEach( item => { %>
+      <tr>
+        <td><%= item.name _%> </td>
+        <td><%= item.age _%></td>
+        <td><%= item.city _%></td>
+      </tr>
+      <% }) %>
+    </table>
+
+    <!-- <h1>About Page</h1> -->
+    <!-- <p>who is mahnoor? mahnoor is a passionate software engineer.</p> -->
+     
+    <!-- if statement: -->
+<!-- 
+    <% if(message) { %>
+        <p><%= message %></p>
+    <% } else { %>
+      <span>There is no message.</span>
+        <% } %> -->
+
+         <!-- for loops: -->
+        <!-- <% let items= ['Apple', 'Banana', 'Cherry'] %>
+
+        <!-- <ul>
+            <% items.forEach(item => { %> 
+            <li><%= item _%> </li>
+        <% }) %>
+        </ul>  
+
+        <h1><%= title %></h1> -->
+
+         <!-- <ul>
+            <% items.forEach(item => { %>
+            <li><%= item _%> </li>
+        <% }) %> 
+        </ul> -->
+
+</body>
+</html>
