@@ -1,0 +1,26 @@
+{
+  "name": "learn_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahnoor-Muhammad-Naeem/Learning_NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahnoor-Muhammad-Naeem/Learning_NodeJS/issues"
+  },
+  "homepage": "https://github.com/Mahnoor-Muhammad-Naeem/Learning_NodeJS#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

@@ -9,9 +9,11 @@
 <body>
     <div class="container">
         <div class="row mb-5">
-        <div class="col .bg-warning-subtle">EJS Template</div>
+        <div class="col .bg-warning-subtle"><h1>EJS Template</h1>
+        </div>
     </div>
-    <div class="row">
+    <%- include('header')  %>
+        <div class="row mb-5">
         <div class="col">
          <form action="/submit" method="POST">
             Enter Name : <input type="text" name="myname">
@@ -20,7 +22,12 @@
          </form>
         </div>
     </div>
-    <div class="row">
+    <div class="row my-3">
+        <div class="col bg-success-subtle">
+            <%= message %>
+            </div>
+    </div>
+    <!-- <div class="row">
         <div class="col .bg-info-subtle">
             Made By Mahnoor.
         </div>
@@ -30,4 +37,6 @@
     </body>
     </body>
 </body>
-</html>
+</html> -->
+
+<%- include('footer')  %>

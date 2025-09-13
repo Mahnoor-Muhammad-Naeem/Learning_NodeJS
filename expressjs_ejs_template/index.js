@@ -2,6 +2,9 @@ import express from 'express'
 const app= express()
 
 app.set('view engine', 'ejs')
+app.use(express.urlencoded({ extended: false}))
+
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     res.send("Home Page")
@@ -33,12 +36,21 @@ res.render("about", {
 }) 
 
 app.get('/form',(req, res) => {
-    res.render('form')
+    res.render('form', {message: null})
+})
+
+app.post('/submit',(req, res) => {
+    const name= req.body.myname
+
+    const message = 'Hello, ${name} You submitted the form.'
+    res.render('form', {message: message})
 })
 
 app.listen(3000,()=>{
     console.log("Server started successfully on port : 3000")
 })
+
+
 // for output:req.accepts(
 // localhost:3000 => for home page
 // localhost:3000/about
